@@ -406,6 +406,7 @@ a:hover {
 .first {
   width: 100%;
   height: 100vh;
+  min-height: 550px;
   background-image: url(../img/main_house.png);
   background-size: cover;
   background-position: center;
@@ -444,7 +445,7 @@ header nav ul li {
   margin: 0px 15px;
 }
 
-.first_container_small {
+.container_small {
   width: 1200px;
   margin: 0 auto;
 }
@@ -484,7 +485,7 @@ h1 {
   line-height: 23px;
 }
 
-.learn-more {
+.first_main-block .learn-more {
   display: block;
   width: 196px;
   height: 54px;
@@ -497,4 +498,17 @@ h1 {
   font-size: 19px;
   margin-top: 1.7vw;
   border: 2px solid #58FFB9;
+  -webkit-transition: linear .2s;
+  -o-transition: linear .2s;
+  transition: linear .2s;
+  font-weight: bold;
+}
+
+.first_main-block .learn-more:hover {
+  color: black;
+  background: #58FFB9;
+}
+
+.second {
+  background: black;
 }

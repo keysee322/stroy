@@ -366,6 +366,7 @@ a:hover{
 .first{
     width: 100%;
     height: 100vh;
+    min-height: 550px;
     background-image: url(../img/main_house.png);
     background-size: cover;	
     background-position: center;
@@ -397,7 +398,7 @@ header{
     }
   }
 }
-.first_container_small{
+.container_small{
   width: 1200px;
 
   margin: 0 auto;
@@ -429,17 +430,28 @@ h1{
     margin-top: 4vh;
     line-height: 23px;
   }
+  .learn-more{
+    display: block;
+    width: 196px;
+    height: 54px;
+    font-family: 'Lora';
+    color: #58FFB9;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 19px;
+    margin-top: 1.7vw;
+    border: 2px solid #58FFB9;
+    transition: linear .2s;
+    font-weight: bold;
+  }
+  .learn-more:hover{
+    color: black;
+    background: #58FFB9;
+    
+  }
 }
-.learn-more{
-  display: block;
-  width: 196px;
-  height: 54px;
-  font-family: 'Lora';
-  color: #58FFB9;
-  box-sizing: border-box;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 19px;
-  margin-top: 1.7vw;
-  border: 2px solid #58FFB9;
+
+.second{
+  background: black;
 }
