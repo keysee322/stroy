@@ -597,11 +597,14 @@ input{
   margin-right: 45px;
   justify-content: left;
   font-family: Merriweather;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 23px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  color: white;
+  outline:none;
 }
+
 button{
   margin-top: 32px!important;
 }
