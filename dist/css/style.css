@@ -406,7 +406,7 @@ a:hover {
 .first {
   width: 100%;
   height: 100vh;
-  min-height: 550px;
+  min-height: 600px;
   background-image: url(../img/main_house.png);
   background-size: cover;
   background-position: center;
@@ -472,17 +472,20 @@ h1 {
   font-size: 36px;
 }
 
+p {
+  font-size: 18px;
+  font-family: 'Merriweather';
+  line-height: 23px;
+}
+
 .first_main-block {
   margin-top: 33.4vh;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .first_main-block p {
-  font-family: 'Merriweather';
-  font-size: 18px;
   width: 424px;
   margin-top: 4vh;
-  line-height: 23px;
 }
 
 .first_main-block .learn-more {
@@ -511,4 +514,139 @@ h1 {
 
 .second {
   background: black;
+  height: 90vh;
+  min-height: 600px;
+}
+
+.second .container_small {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: calc(50vh - 335px);
+}
+
+.box-about {
+  margin: 15px 0px;
+  width: 356px;
+  border: 9px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.box-about .about_container {
+  text-align: center;
+}
+
+.box-about h1 {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 82px;
+  margin: 20px 0px;
+}
+
+.box-about p {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 40px;
+}
+
+.block-about {
+  padding-top: 100px;
+  width: 535px;
+  vertical-align: middle;
+}
+
+.block-about h1 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 46px;
+  width: 434px;
+}
+
+.block-about .text {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.small {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.125em;
+}
+
+.third {
+  height: 880px;
+  background: black;
+  background-image: url(../img/skills.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 1920px;
+  background-clip: border-box;
+}
+
+.third h1 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 46px;
+  width: 434px;
+}
+
+.third_container {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.38);
+}
+
+.third_container .container_small {
+  padding-top: 80px;
+}
+
+.our-skills {
+  margin-top: 100px;
+  color: black;
+  height: 476px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.our-skills div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 42px;
+  text-align: center;
+  background: white;
+  width: 370px;
+  height: 100%;
+}
+
+.our-skills div p {
+  width: 268px;
+  margin: 0px auto;
+}
+
+.our-skills .calculating {
+  padding-top: 36px;
+}
+
+.our-skills .calculating h2 {
+  margin-top: 36px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-top: 42px;
+  margin-bottom: 36px;
 }
