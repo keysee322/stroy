@@ -407,18 +407,22 @@ header{
   margin-top: -34px;
   p{
     margin-bottom: 0px;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Lora';
   }
   p.small-logo{
     font-size: 11px;
-    margin-top: 4px;
+    margin-top: 0px;
   }
 }
 .phone{
   text-align: right;
-  margin-top: -34px;
+  margin-top: -38px;
 }
 h1{
   font-size: 36px;
+  margin-top: 20px;
 }
 p{
   font-size: 18px;
@@ -513,7 +517,7 @@ p{
   letter-spacing: 0.125em;
 }
 .third{
-  height: 880px;
+  height: 800px;
   background: black;
   background-image: url(../img/skills.png);
   background-repeat: no-repeat;
@@ -565,4 +569,24 @@ h2{
   font-size: 32px;
   margin-top: 42px;
   margin-bottom: 36px;
+}
+.four{
+  background: black;
+  height: 700px;
+  padding-top: 50px;
+  box-sizing: border-box;
+  p{
+    width: 569px;
+    margin-bottom: 33px;
+  }
+  .small{
+    margin-bottom: 20px;
+  }
+}
+input{
+  border: 0px solid white;
+  border-bottom: 2px solid white;
+  background: black;
+  height: 45px;
+  box-sizing: border-box;
 }
