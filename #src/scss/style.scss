@@ -436,28 +436,29 @@ p{
     width: 424px;
     margin-top: 4vh;
   }
-  .learn-more{
-    display: block;
-    width: 196px;
-    height: 54px;
-    font-family: 'Lora';
-    color: #58FFB9;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 19px;
-    margin-top: 1.7vw;
-    border: 2px solid #58FFB9;
-    transition: linear .2s;
-    font-weight: bold;
-  }
-  .learn-more:hover{
-    color: black;
-    background: #58FFB9;
-    
-  }
-}
 
+}
+.learn-more{
+  display: block;
+  width: 196px;
+  height: 54px;
+  font-family: 'Lora';
+  color: #58FFB9;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 19px;
+  margin-top: 1.7vw;
+  border: 2px solid #58FFB9;
+  transition: linear .2s;
+  font-weight: bold;
+  background: rgba($color: #000000, $alpha: 0);
+}
+.learn-more:hover{
+  color: black;
+  background: #58FFB9;
+  
+}
 .second{
   background: black;
   height: 90vh;
@@ -583,10 +584,33 @@ h2{
     margin-bottom: 20px;
   }
 }
+form{
 input{
   border: 0px solid white;
   border-bottom: 2px solid white;
   background: black;
   height: 45px;
+  padding-left: 2px;
   box-sizing: border-box;
+  width: 230px;
+  display: inline-block;
+  margin-right: 45px;
+  justify-content: left;
+  font-family: Merriweather;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 23px;
+}
+button{
+  margin-top: 32px!important;
+}
+}
+footer{
+  font-family: Lora;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+margin-top: 81px;
 }

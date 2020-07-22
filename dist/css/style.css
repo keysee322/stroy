@@ -492,7 +492,7 @@ p {
   margin-top: 4vh;
 }
 
-.first_main-block .learn-more {
+.learn-more {
   display: block;
   width: 196px;
   height: 54px;
@@ -509,9 +509,10 @@ p {
   -o-transition: linear .2s;
   transition: linear .2s;
   font-weight: bold;
+  background: rgba(0, 0, 0, 0);
 }
 
-.first_main-block .learn-more:hover {
+.learn-more:hover {
   color: black;
   background: #58FFB9;
 }
@@ -672,11 +673,36 @@ h2 {
   margin-bottom: 20px;
 }
 
-input {
+form input {
   border: 0px solid white;
   border-bottom: 2px solid white;
   background: black;
   height: 45px;
+  padding-left: 2px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 230px;
+  display: inline-block;
+  margin-right: 45px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+form button {
+  margin-top: 32px !important;
+}
+
+footer {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 81px;
 }
