@@ -448,7 +448,7 @@ p{
   text-align: center;
   padding: 15px 0;
   font-size: 19px;
-  margin-top: 1.7vw;
+  margin-top: 3.7vh;
   border: 2px solid #58FFB9;
   transition: linear .2s;
   font-weight: bold;
@@ -487,14 +487,14 @@ p{
     margin: 20px 0px;
   }
   p{
-    font-weight: normal;
+    font-weight: 300;
     font-size: 24px;
     line-height: 31px;
     margin-bottom: 40px;
   }
 }
 .block-about{
-  padding-top: 100px;
+  margin-top: 100px;
   width: 535px;
   vertical-align: middle;
 
@@ -596,7 +596,7 @@ input{
   display: inline-block;
   margin-right: 45px;
   justify-content: left;
-  font-family: Merriweather;
+  font-family: "Lora";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -605,8 +605,10 @@ input{
   outline:none;
 }
 
+
 button{
   margin-top: 32px!important;
+  cursor: pointer;
 }
 }
 footer{
@@ -616,4 +618,142 @@ font-weight: normal;
 font-size: 14px;
 line-height: 18px;
 margin-top: 81px;
+}
+
+
+@media(min-width: 768.00001px) and (max-width: 1300px){
+  p{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .container_small{
+    width: 700px;
+  }
+  .logo_container{
+    display: block;
+    margin: 0px 285px;
+    position: absolute;
+    top: 20px;
+    p{
+      font-size: 14px;
+    line-height: 17px;
+    }
+    p.small-logo{
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+  a{
+    font-size: 13px;
+    line-height: 15px;
+  }
+  header{
+    nav{
+      margin-top: 40px;
+    }
+  }
+  .phone {
+    text-align: right;
+    margin-top: -82px;
+    font-size: 13px;
+    line-height: 15px;
+}
+h1{
+  font-size: 30px;
+  line-height: 38px;
+}
+.learn-more{
+  font-size: 17px;
+  line-height: 22px;
+  margin-top: 5vh;
+  padding: 0px 0;
+}
+.first{
+  min-height: 465px;
+}
+
+.box-about {
+  margin: 15px 0px;
+  width: 278px;
+  h1{
+    font-size: 48px;
+    line-height: 61px;
+  }
+  p{
+    font-size: 18px;
+    
+  }
+}
+.block-about{
+  width: 360px;
+  .text{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  h1{
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+.small{
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.125em;
+}
+.second{
+  min-height: 525px;
+  .container_small{
+    padding-top: calc(50vh - 295px);
+  }
+}
+.third{
+  height: 560px;
+  background-size: 100%;
+  h1{
+    font-size: 30px;
+    line-height: 38px;
+  }
+   .container_small {
+    padding-top: 37px;
+}
+}
+img{
+  width: 70px;
+}
+h2{
+  font-size: 24px;
+  line-height: 31px;
+  margin-top: 29px;
+    margin-bottom: 29px;
+}
+.our-skills{
+  height: 350px;
+  margin-top: 41px;
+  .calculating{
+    padding-top: 25px;
+    h2{
+      margin-top: 25px;
+    }
+  }
+  div{
+    width: 212px;
+    padding-top: 31px;
+  p {
+    width: 180px;
+    margin: 0px auto;
+    font-size: 14px;
+    line-height: 16px;
+    }
+  }
+}
+.four{
+  padding-top: 10px;
+  height: 567px;
+  .small{
+      margin-bottom: 6px;
+  }
+}
+footer {
+  margin-top: 53px;
+}
 }

@@ -12,14 +12,14 @@ let path={
     },
     src:{
         html: source_folder + "/*.pug",
-        css: source_folder + "/scss/style.scss",
-        js: source_folder + "/js/script.js",
+        css: source_folder + "/scss/*.{scss,css}",
+        js: source_folder + "/js/*.js",
         img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
         fonts: source_folder + "/fonts/*.ttf",
     },
     watch:{
         html: source_folder + "/**/*.pug",
-        css: source_folder + "/scss/**/*.scss",
+        css: source_folder + "/scss/**/*.{scss,css}",
         js: source_folder + "/js/**/*.js",
         img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
     },

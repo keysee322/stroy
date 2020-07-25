@@ -503,7 +503,7 @@ p {
   text-align: center;
   padding: 15px 0;
   font-size: 19px;
-  margin-top: 1.7vw;
+  margin-top: 3.7vh;
   border: 2px solid #58FFB9;
   -webkit-transition: linear .2s;
   -o-transition: linear .2s;
@@ -555,14 +555,14 @@ p {
 }
 
 .box-about p {
-  font-weight: normal;
+  font-weight: 300;
   font-size: 24px;
   line-height: 31px;
   margin-bottom: 40px;
 }
 
 .block-about {
-  padding-top: 100px;
+  margin-top: 100px;
   width: 535px;
   vertical-align: middle;
 }
@@ -687,7 +687,7 @@ form input {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  font-family: Merriweather;
+  font-family: "Lora";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -698,6 +698,7 @@ form input {
 
 form button {
   margin-top: 32px !important;
+  cursor: pointer;
 }
 
 footer {
@@ -707,4 +708,169 @@ footer {
   font-size: 14px;
   line-height: 18px;
   margin-top: 81px;
+}
+
+@media (min-width: 768.00001px) and (max-width: 1300px) {
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .container_small {
+    width: 700px;
+  }
+
+  .logo_container {
+    display: block;
+    margin: 0px 285px;
+    position: absolute;
+    top: 20px;
+  }
+
+  .logo_container p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .logo_container p.small-logo {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  a {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  header nav {
+    margin-top: 40px;
+  }
+
+  .phone {
+    text-align: right;
+    margin-top: -82px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .learn-more {
+    font-size: 17px;
+    line-height: 22px;
+    margin-top: 5vh;
+    padding: 0px 0;
+  }
+
+  .first {
+    min-height: 465px;
+  }
+
+  .box-about {
+    margin: 15px 0px;
+    width: 278px;
+  }
+
+  .box-about h1 {
+    font-size: 48px;
+    line-height: 61px;
+  }
+
+  .box-about p {
+    font-size: 18px;
+  }
+
+  .block-about {
+    width: 360px;
+  }
+
+  .block-about .text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .block-about h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .small {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.125em;
+  }
+
+  .second {
+    min-height: 525px;
+  }
+
+  .second .container_small {
+    padding-top: calc(50vh - 295px);
+  }
+
+  .third {
+    height: 560px;
+    background-size: 100%;
+  }
+
+  .third h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .third .container_small {
+    padding-top: 37px;
+  }
+
+  img {
+    width: 70px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 31px;
+    margin-top: 29px;
+    margin-bottom: 29px;
+  }
+
+  .our-skills {
+    height: 350px;
+    margin-top: 41px;
+  }
+
+  .our-skills .calculating {
+    padding-top: 25px;
+  }
+
+  .our-skills .calculating h2 {
+    margin-top: 25px;
+  }
+
+  .our-skills div {
+    width: 212px;
+    padding-top: 31px;
+  }
+
+  .our-skills div p {
+    width: 180px;
+    margin: 0px auto;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .four {
+    padding-top: 10px;
+    height: 567px;
+  }
+
+  .four .small {
+    margin-bottom: 6px;
+  }
+
+  footer {
+    margin-top: 53px;
+  }
 }
