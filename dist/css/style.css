@@ -927,7 +927,7 @@ footer {
   }
 }
 
-@media (min-width: 768.00001px) and (max-width: 1300px) {
+@media (min-width: 768px) and (max-width: 1300px) {
   p {
     font-size: 16px;
     line-height: 20px;
