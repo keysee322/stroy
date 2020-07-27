@@ -713,6 +713,7 @@ footer {
 @media (max-width: 767px) {
   .first{
     min-height: 650px;
+}
   header {
     display: -webkit-box;
     display: -ms-flexbox;
