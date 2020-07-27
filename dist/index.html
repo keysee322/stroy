@@ -2,13 +2,13 @@
 <html lang="ru-RU">
   <head>
     <title>Stroyka</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&amp;family=Merriweather:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&amp;family=Lora:wght@400;500;700&amp;family=Merriweather:wght@300;400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width; initial-scale=1">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/contactform.js"></script>
   </head>
   <body>
     <div class="first">
@@ -31,12 +31,13 @@
           </header>
           <div class="first_main-block">
             <h1>Sint ullamco sunt veniam laborum</h1>
-            <p>Eiusmod minim adipisicing elit ea adipisicing dolore anim consequat mollit ut duis culpa adipisicing. Laborum ea do id ullamco excepteur et ea est.</p><a class="learn-more">Узнать больше</a>
+            <p>Eiusmod minim adipisicing elit ea adipisicing dolore anim consequat mollit ut duis culpa adipisicing. Laborum ea do id ullamco excepteur et ea est.</p><a class="learn-more" href="#1">Узнать больше</a>
           </div>
         </div>
       </div>
     </div>
     <div class="second">
+      <section id="1"></section>
       <div class="container_small">
         <div class="box-about">
           <div class="about_container">
@@ -84,13 +85,20 @@
         <p>Вы можете связаться с нами и начать наше сотрудничество или оставьте свои контактные данные и мы свяжемся с вами в ближайшее время.</p>
         <p>Наш телефон: +7 985 778-06-42</p>
         <p>Наша почта: info@conceptmsk.com</p>
-        <form action="">
-          <input type="text" placeholder="Имя">
-          <input type="text" placeholder="+7 (___) ___-__-__">
+        <form class="ajax-contact-form" enctype="multipart/form-data" method="POST">
+          <input type="text" name="user_name" required placeholder="Имя">
+          <input type="text" name="user_phone" required id="form_phone" placeholder="+7 (___) ___-__-__">
           <button class="learn-more" type="submit">Заказать звонок</button>
         </form>
         <footer>ОЛИМП-СТРОЙ (C) 2020 ВСЕ ПРАВА ЗАЩИЩЕНЫ</footer>
       </div>
     </div>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script>
+    $(document).ready(function() {
+    $("#form_phone").mask("+7 (999) 999-99-99");
+    });
+  </script>
 </html>

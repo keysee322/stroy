@@ -9,6 +9,7 @@ let path={
         js: project_folder + "/js/",
         img: project_folder + "/img/",
         fonts: project_folder + "/css/fonts/",
+        php: project_folder + "/php/",
     },
     src:{
         html: source_folder + "/*.pug",
@@ -16,12 +17,14 @@ let path={
         js: source_folder + "/js/*.js",
         img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
         fonts: source_folder + "/fonts/*.ttf",
+        php: source_folder + "/php/**/*.php",
     },
     watch:{
         html: source_folder + "/**/*.pug",
         css: source_folder + "/scss/**/*.{scss,css}",
         js: source_folder + "/js/**/*.js",
         img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+        php: source_folder + "/php/**/*.php",
     },
     clean: "./" + project_folder + "/"
 }
@@ -59,6 +62,11 @@ let {src, dest } = require('gulp'),
  function img() {
     return src(path.src.img)
     .pipe(dest(path.build.img))
+    .pipe(browsersync.stream())
+ }
+ function php() {
+    return src(path.src.php)
+    .pipe(dest(path.build.php))
     .pipe(browsersync.stream())
  }
  function js() {
@@ -100,9 +108,12 @@ let {src, dest } = require('gulp'),
  function watchFiles(params) {
      gulp.watch([path.watch.html], html);
      gulp.watch([path.watch.css], css);
+     gulp.watch([path.watch.js], js);
+     gulp.watch([path.watch.php], php);
+     gulp.watch([path.watch.img], img);
  }
 
- let build = gulp.series(clean, gulp.parallel(js, fonts, img, css, html));
+ let build = gulp.series(clean, gulp.parallel(js, fonts, php, img, css, html));
  let watch = gulp.parallel(build, watchFiles, browserSync);
 
  exports.js = js;

@@ -11,6 +11,7 @@
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    scroll-behavior: smooth;
   }
   
   /* Sections
@@ -355,10 +356,12 @@
 body{
     font-family: 'Lora', serif;
     color: white;
+    
 }
 a{
   cursor: pointer;
   transition: linear 0.2s;
+  text-decoration: none;
 }
 a:hover{
   color: #58FFB9
@@ -619,7 +622,56 @@ font-size: 14px;
 line-height: 18px;
 margin-top: 81px;
 }
-
+.success_back{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+      display: flex;
+  justify-content: center;
+  top: 0px;
+  z-index: 100;
+  background: rgba(0,0,0, .6);
+}
+.success{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+      display: flex;
+  justify-content: center;
+  top: 0px;
+  z-index: 100;
+}
+.success_img_done{
+  width: 70px;
+  height: 70px;
+}
+.success_block{
+  font-family: "Open Sans";
+  font-weight: bold;
+  box-sizing: border-box;
+  width: 360px;
+  height: 360px;
+  position: fixed;
+  top: 0px;
+  display: block;
+  text-align: center;
+  padding-top: 78px;
+  margin-top: calc(50vh - 180px);
+  background: white;
+  z-index: 101;
+}
+.success_header{
+font-size: 24px;
+margin: 18px 0 12px;
+}
+.success_text{
+  font-family: "Open Sans";
+  font-weight: normal;
+font-size: 16px;
+display: inline-block;
+width: 207px;
+margin-top: 0px;
+}
 
 @media(min-width: 768px) and (max-width: 1300px){
   p{
