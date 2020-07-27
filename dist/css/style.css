@@ -711,10 +711,16 @@ footer {
 }
 
 @media (max-width: 767px) {
+<<<<<<< HEAD
   .first {
     min-height: 95vw;
   }
 
+=======
+  .first{
+    min-height: 650px;
+}
+>>>>>>> 6fc27e3865128e98dd7a93f00fe81a0168001c4e
   header {
     display: -webkit-box;
     display: -ms-flexbox;
