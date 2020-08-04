@@ -505,7 +505,7 @@ p{
     font-weight: bold;
     font-size: 36px;
     line-height: 46px;
-    width: 434px;
+    width: 299px;
   }
   .text{
     font-family: Merriweather;
@@ -557,10 +557,18 @@ p{
     background: white;
     width: 370px;
     height: 100%;
-    p{
-      width: 268px;
-      margin: 0px auto;
-    }
+  }
+  .repair p{
+    width: 294px;
+    margin: 0px auto;
+  }
+  .building p{
+    width: 268px;
+    margin: 0px auto;
+  }
+  .calculating p{
+    width: 310px;
+    margin: 0px auto;
   }
   .calculating{
     padding-top: 36px;
@@ -791,12 +799,18 @@ h2{
   div{
     width: 212px;
     padding-top: 31px;
-  p {
+  }
+  .repair p, .building p {
     width: 180px;
     margin: 0px auto;
     font-size: 14px;
     line-height: 16px;
-    }
+  }
+  .calculating p{
+    width: 186px;
+    margin: 0px auto;
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 .four{

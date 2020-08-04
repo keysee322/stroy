@@ -571,7 +571,7 @@ p {
   font-weight: bold;
   font-size: 36px;
   line-height: 46px;
-  width: 434px;
+  width: 299px;
 }
 
 .block-about .text {
@@ -637,8 +637,18 @@ p {
   height: 100%;
 }
 
-.our-skills div p {
+.our-skills .repair p {
+  width: 294px;
+  margin: 0px auto;
+}
+
+.our-skills .building p {
   width: 268px;
+  margin: 0px auto;
+}
+
+.our-skills .calculating p {
+  width: 310px;
   margin: 0px auto;
 }
 
@@ -1141,8 +1151,16 @@ footer {
     padding-top: 31px;
   }
 
-  .our-skills div p {
+  .our-skills .repair p,
+  .our-skills .building p {
     width: 180px;
+    margin: 0px auto;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .our-skills .calculating p {
+    width: 186px;
     margin: 0px auto;
     font-size: 14px;
     line-height: 16px;
